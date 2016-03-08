@@ -3,7 +3,8 @@ if(!isset($_SESSION)){
     session_start();
 }
 ?>
-<?php require('header.php')?>
+
+<?php require('./header.php')?>
 
 <div class="div_cuerpo">
     <div class="div_clear"></div>

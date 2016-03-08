@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php  require('php/conexion.php'); ?>
+<?php  require('./php/conexion.php'); ?>
 <?php
 //--------verificaciones para login
 if(!isset($_SESSION)){
@@ -7,30 +7,30 @@ if(!isset($_SESSION)){
 }
 if (!isset($_SESSION['nombre_Usuario'])){
 
-    header ("Location: /index.php");
+    header ("Location: index.php");
 }
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="icon" type="image/png" href="/css/logousac.png" />
-<link rel="stylesheet" type="text/css" href="/css/menu.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/css/font-awesome.css" />
+<link rel="icon" type="image/png" href="./css/logousac.png" />
+<link rel="stylesheet" type="text/css" href="./css/menu.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link rel="stylesheet" type="text/css" href="./css/css/font-awesome.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/javascripts/verificaciones.js"></script>
-<!--<script src="./javascripts/login.js"></script>-->
+<!--<script src="./javascripts/verificaciones.js"></script>
+<script src="./javascripts/login.js"></script>-->
 <title>EduAnalisis</title>
 </head>
 <body>
     <div class="banner">
         <div class="image_banner">
-       <a href="../principal.php"><img src="/images/banner.png"></a>
+       <a href="./principal.php"><img src="./images/banner.png"></a>
        </div>
        <div class="container_sub">
             <ul id="nav">
-                <li><a href="../principal.php" > Principal </a></li>
-                <li><a href="../principal.php" > Acerca De </a></li>
-                <li><a href="../php/logout.php" class="fa fa-toggle-off"><?php echo " ".$_SESSION['nombre_Usuario']; ?> Logout</a></li>
+                <li><a href="./principal.php" > Principal </a></li>
+                <li><a href="./principal.php" > Acerca De </a></li>
+                <li><a href="php/logout.php" class="fa fa-toggle-off"><?php echo " ".$_SESSION['nombre_Usuario']; ?> Logout</a></li>
             </ul>
        </div>
         <div class="div_clear"></div>
@@ -42,7 +42,7 @@ if (!isset($_SESSION['nombre_Usuario'])){
                     <ul class="subs">
                         <li><a href="#">Gestion de Maestros</a>
                             <ul>
-                                <li id="li_maestros_fe"><a href="/abc/abc_maestros_fe.php">Operaciones Sobre Maestros</a></li>
+                                <li id="li_maestros_fe"><a href="./abc/abc_maestros_fe.php">Operaciones Sobre Maestros</a></li>
                             </ul>
                         </li>
                     </ul>
