@@ -2,7 +2,7 @@
 
     $servername = 'localhost';
     $username = 'root';
-    $password = "root";
+    $password = "";
     $database = "ayd2_eduanalisis";
     $dbport = 3306;
 
